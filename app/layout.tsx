@@ -3,7 +3,10 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/navbar"; // Import it
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter", // Define a CSS variable
+});
 
 export const metadata: Metadata = {
   title: "Sourajit Majumder | Full Stack Developer",
@@ -17,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} bg-gray-50 dark:bg-neutral-950 text-gray-900 dark:text-gray-100 antialiased`}>
+      <body className={`${inter.variable} font-sans bg-gray-50 dark:bg-neutral-950 text-gray-900 dark:text-gray-100 antialiased`}>
         <Navbar />
         {children}
       </body>

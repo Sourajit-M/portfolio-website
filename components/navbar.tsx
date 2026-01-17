@@ -7,7 +7,7 @@ export default function Navbar() {
         <Link href="/" className="hover:text-blue-600 transition-colors">Home</Link>
         <Link href="#projects" className="hover:text-blue-600 transition-colors">Projects</Link>
         <Link href="#stack" className="hover:text-blue-600 transition-colors">Stack</Link>
-        <Link href="mailto:your@email.com" className="px-4 py-1.5 bg-black text-white dark:bg-white dark:text-black rounded-full text-xs font-semibold hover:opacity-80 transition-opacity">
+        <Link href="mailto:sourajitm19@gmail.com" className="px-4 py-1.5 bg-black text-white dark:bg-white dark:text-black rounded-full text-xs font-semibold hover:opacity-80 transition-opacity">
           Let's Talk
         </Link>
       </div>

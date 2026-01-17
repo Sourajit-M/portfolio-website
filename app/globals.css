@@ -7,11 +7,14 @@
   --border: #27272a;
 }
 
+@theme {
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  /* We will swap this font in the next step */
+  font-family: var(--font-sans);
 }
 
 /* Utility to hide scrollbar but keep functionality */
