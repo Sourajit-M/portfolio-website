@@ -18,7 +18,7 @@ export const portfolioData = {
       year: "2026",
       tech: ["Python", "TensorFlow", "OpenCV", "FastAPI", "React"],
       href: "https://glaucoma-detection-project.vercel.app/",
-      githubUrl: "https://github.com/Sourajit-M/glaucoma-detection",
+      githubUrl: "https://github.com/Sourajit-M/glaucoma-detection-project",
       image: "/images/glaucoma-app.png",
       status: "Completed",
       highlights: [
