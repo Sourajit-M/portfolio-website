@@ -1,9 +1,11 @@
+import { icons } from "lucide-react";
+
 export const portfolioData = {
   name: "Sourajit Majumder",
-  role: "AI Engineer, Backend Developer",
+  role: "Engineer",
   email: "sourajitm19@gmail.com",
   status: "Available for work",
-  description: "3rd-year B.Tech CSE (AIML) student passionate about building practical AI/ML systems, scalable backend applications",
+  description: "Building practical and scalable AI/ML systems",
   socials: [
     { name: "GitHub", href: "https://github.com/Sourajit-M", platform: "github" },
     { name: "Twitter", href: "https://x.com/Sourajit_drk", platform: "twitter" },
@@ -14,17 +16,15 @@ export const portfolioData = {
       id: "glaucoma",
       title: "Glaucoma Detection AI",
       description: "Deep learning model that detects glaucoma from retinal scans with high accuracy.",
-      longDescription: "Glaucoma is a leading cause of irreversible blindness. This project uses a convolutional neural network trained on retinal fundus images to detect glaucomatous changes with explainability heatmaps.",
-      year: "2026",
       tech: ["Python", "TensorFlow", "OpenCV", "FastAPI", "React"],
       href: "https://glaucoma-detection-project.vercel.app/",
       githubUrl: "https://github.com/Sourajit-M/glaucoma-detection-project",
       image: "/images/glaucoma-app.png",
       status: "Completed",
       highlights: [
-        "94% validation accuracy",
-        "Grad-CAM heatmaps for explainability",
-        "Production deployment on Vercel + Render"
+        "Built a clinical-grade AI system that detects glaucoma from eye images with 94.5% AUC and 87.1% accuracy, beating traditional ML models by 15%",
+        "Used ResNet-18 for image classification and U-Net for optic disc/cup segmentation, plus Grad-CAM to show doctors why the AI made its decision.",
+        "Used ONYX instead of Pytorch for better performance."
       ]
     },
     {
@@ -32,12 +32,16 @@ export const portfolioData = {
       title: "YouTube Semantic Search with RAG",
       description: "Search YouTube transcripts semantically and get AI-generated answers with source attribution.",
       year: "2025",
-      tech: ["Python", "LangChain", "FAISS", "FastAPI", "Next.js", "OpenAI"],
+      tech: ["Python", "Gemini API Key", "FAISS", "Youtube APIs", "FastAPI", 'LangChain'],
       href: "#",
       githubUrl: "https://github.com/Sourajit-M/youtube-semantic-search",
       image: "/images/youtube-rag.png",
       status: "In development",
-      highlights: ["Vector similarity search", "LLM-powered Q&A with citations"]
+      highlights: [
+        "Built a search engine that understands meaning, not just keywords — reduced irrelevant results by ~40% compared to keyword search.",
+        "Used sentence-transformer embeddings and FAISS for fast similarity search on video transcripts.",
+        "Pulls video metadata and transcripts automatically using YouTube's API."
+      ]
     },
     {
       id: "pern-chat",
@@ -49,7 +53,11 @@ export const portfolioData = {
       githubUrl: "https://github.com/Sourajit-M/chat-app",
       image: "/images/chat-app.png",
       status: "Completed",
-      highlights: ["JWT authentication", "Real-time messaging", "AI summarization"]
+      highlights: [
+        "A full-featured messaging app with real-time WebSocket communication, user auth, and persistent chat history.", 
+        "Designed a clean PostgreSQL database schema to keep message fetching fast.", 
+        "Gemini API Key - AI summarization"
+      ]
     }
   ],
   skills: [
@@ -78,13 +86,14 @@ export const portfolioData = {
     { label: "Email", href: "mailto:sourajitm19@gmail.com" },
   ],
   techStack: [
-    { name: "Next.js", icon: "SiNextdotjs" },
-    { name: "Tailwind", icon: "SiTailwindcss" },
-    { name: "TypeScript", icon: "SiTypescript" },
-    { name: "React", icon: "SiReact" },
-    { name: "Figma", icon: "SiFigma" },
-    { name: "Vercel", icon: "SiVercel" },
-    { name: "AWS", icon: "SiAmazonwebservices" },
+    { name: "Javascript", icon: "SiJavascript"},
+    { name: "Java", icon: "FaJava" },
+    { name: "Node.js", icon: "FaNodeJs" },
     { name: "Postman", icon: "SiPostman" },
+    { name: "Docker", icon:"SiDocker" },
+    { name: "Mongodb", icon:"SiMongodb" },
+    { name:"VS Code", icon: "VscVscode"},
+    { name:"Git", icon:"SiGit" },
+    { name: "Notion", icon: "SiNotion" }
   ]
 };

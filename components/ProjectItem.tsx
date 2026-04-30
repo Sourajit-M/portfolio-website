@@ -142,7 +142,7 @@ export function ProjectItem({ title, description, year, href, tech, githubUrl, i
             className="relative w-64 h-40 rounded-xl overflow-hidden shadow-2xl"
           >
             {/* Fallback gradient if image fails to load or isn't actually there */}
-            <div className="absolute inset-0 bg-gradient-to-br from-ctp-mauve to-ctp-blue mix-blend-overlay z-10" />
+            <div className="absolute inset-0 bg-linear-to-br from-ctp-mauve to-ctp-blue mix-blend-overlay z-10" />
             <img 
               src={image} 
               alt={title}

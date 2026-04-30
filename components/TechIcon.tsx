@@ -5,10 +5,11 @@ import {
   SiTailwindcss, 
   SiTypescript, 
   SiReact, 
-  SiFigma, 
+  SiMongodb,
+  SiDocker,
+  SiJavascript, 
   SiVercel, 
   SiPostman,
-  SiBun,
   SiPython,
   SiTensorflow,
   SiOpencv,
@@ -18,9 +19,13 @@ import {
   SiPostgresql,
   SiExpress,
   SiNodedotjs,
-  SiSocketdotio
+  SiSocketdotio,
+  SiGit,
+  SiNotion,
 } from "react-icons/si";
-import { FaAws } from "react-icons/fa6";
+import { FaJava,FaNodeJs, FaYoutube } from "react-icons/fa";
+import { RiGeminiFill } from "react-icons/ri";
+import { VscVscode } from "react-icons/vsc";
 import { Database } from "lucide-react";
 
 interface TechIconProps {
@@ -33,10 +38,15 @@ const iconMap: Record<string, React.ReactNode> = {
   SiTailwindcss: <SiTailwindcss size={24} className="text-[#38B2AC]" />,
   SiTypescript: <SiTypescript size={24} className="text-[#3178C6]" />,
   SiReact: <SiReact size={24} className="text-[#61DAFB]" />,
-  SiFigma: <SiFigma size={24} className="text-[#F24E1E]" />,
-  SiVercel: <SiVercel size={24} />,
-  SiAmazonwebservices: <FaAws size={24} className="text-[#FF9900]" />,
   SiPostman: <SiPostman size={24} className="text-[#FF6C37]" />,
+  SiDocker: <SiDocker size={24} className="text-[#0075ea]"/>,
+  SiJavascript: <SiJavascript size={24} className="text-[#ebe708]" />,
+  SiMongodb: <SiMongodb size={24} className="text-[#00fc08]" />,
+  FaJava: <FaJava size={24} className="text-[#c4642d]"/>,
+  FaNodeJs : <FaNodeJs  size={24} className="text-[#22e40d]"/>,
+  VscVscode : <VscVscode size={24} className="text-[#089fe6]"/>,
+  SiGit: <SiGit size={24} className="text-[#FF6C37]" />,
+  SiNotion: <SiNotion size={24}/>,
   
   // From Portfolio Projects
   "Next.js": <SiNextdotjs size={22} />,
@@ -52,6 +62,8 @@ const iconMap: Record<string, React.ReactNode> = {
   "Express": <SiExpress size={22} />,
   "Node.js": <SiNodedotjs size={22} className="text-[#339933]" />,
   "Socket.io": <SiSocketdotio size={22} />,
+  "Youtube APIs": <FaYoutube size={24} className="text-[#e20909]"/>,
+  "Gemini API Key": <RiGeminiFill size={24} className="text-[#196be6]" />,
 };
 
 export function TechIcon({ iconName }: TechIconProps) {
