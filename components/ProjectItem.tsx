@@ -10,7 +10,7 @@ import { TechIcon } from "@/components/TechIcon";
 interface ProjectItemProps {
   title: string;
   description: string;
-  year: string;
+  year?: string;
   href: string;
   tech?: string[];
   githubUrl?: string;
@@ -102,7 +102,7 @@ export function ProjectItem({ title, description, year, href, tech, githubUrl, i
         </div>
 
         <div className="flex items-center gap-4 z-10 shrink-0 mt-2 sm:mt-0">
-          <span className="text-xs font-mono text-ctp-overlay0">{year}</span>
+          {year && <span className="text-xs font-mono text-ctp-overlay0">{year}</span>}
           <div className="flex items-center gap-2">
             {githubUrl && (
               <button
