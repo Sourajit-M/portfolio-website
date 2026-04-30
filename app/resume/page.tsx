@@ -41,7 +41,7 @@ export default function Resume() {
           <div className="rounded-2xl overflow-hidden border border-zinc-800 shadow-2xl bg-zinc-900 w-full">
             <div className="relative w-full aspect-8.5/11">
               <iframe
-                src="https://drive.google.com/file/d/13JosctVUdMl1-8Ee5zguXNoDObUiGJRe/preview"
+                src="https://drive.google.com/file/d/1Ars5dJSkdLkG0dBnm-abeP2zH6oa2Vpa/preview"
                 className="absolute top-0 left-0 w-full h-full"
                 allow="autoplay"
               />
