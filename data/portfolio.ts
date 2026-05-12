@@ -28,19 +28,19 @@ export const portfolioData = {
       ]
     },
     {
-      id: "youtube-rag",
-      title: "YouTube Semantic Search with RAG",
-      description: "Search YouTube transcripts semantically and get AI-generated answers with source attribution.",
+      id: "youtube-knowledge-engine",
+      title: "YouTube Knowledge Engine (Hybrid RAG)",
+      description: "A high-performance RAG platform for querying YouTube channel content with semantic precision and keyword-exact retrieval.",
       year: "2025",
       tech: ["Python", "Gemini API Key", "FAISS", "Youtube APIs", "FastAPI", 'LangChain'],
-      href: "#",
-      githubUrl: "https://github.com/Sourajit-M/youtube-semantic-search",
+      href: "https://huggingface.co/spaces/sourajitm19/youtube_rag",
+      githubUrl: "https://github.com/Sourajit-M/youtube-rag-project",
       image: "/images/youtube-rag.png",
-      status: "In development",
+      status: "Production-Ready",
       highlights: [
-        "Built a search engine that understands meaning, not just keywords — reduced irrelevant results by ~40% compared to keyword search.",
-        "Used sentence-transformer embeddings and FAISS for fast similarity search on video transcripts.",
-        "Pulls video metadata and transcripts automatically using YouTube's API."
+        "Implemented a Hybrid Retrieval system using Reciprocal Rank Fusion (RRF) to combine Vector (Semantic) and BM25 (Keyword) search, significantly improving retrieval accuracy over standard RAG.",
+        "Engineered a lightweight, CPU-optimized embedding pipeline using FastEmbed (ONNX), reducing memory overhead by 80% compared to traditional PyTorch-based transformers.",
+        "Built an automated ingestion pipeline with a background scheduler and SQLite metadata tracking to handle multi-video processing and transcript extraction (yt-dlp) asynchronously."
       ]
     },
     {
