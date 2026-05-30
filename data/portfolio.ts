@@ -33,8 +33,8 @@ export const portfolioData = {
       description: "A high-performance RAG platform for querying YouTube channel content with semantic precision and keyword-exact retrieval.",
       year: "2025",
       tech: ["Python", "Gemini API Key", "FAISS", "Youtube APIs", "FastAPI", 'LangChain'],
-      href: "https://huggingface.co/spaces/sourajitm19/youtube_rag",
-      githubUrl: "https://github.com/Sourajit-M/youtube-rag-project",
+      href: "https://youtube-rag-engine.onrender.com/",
+      githubUrl: "https://github.com/Sourajit-M/youtube-semantic-search",
       image: "/images/youtube-rag.png",
       status: "Production-Ready",
       highlights: [
