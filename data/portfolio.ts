@@ -44,25 +44,25 @@ export const portfolioData = {
       ]
     },
     {
-      id: "pern-chat",
-      title: "AI-Powered Chat App",
-      description: "Real-time chat application with AI-generated conversation summaries.",
+      id: "local-ai-inference",
+      title: "Local AI Inference Platform",
+      description: "A high-performance local AI model benchmarking platform for profiling latency, throughput, cold-starts, and parameter isolation.",
       year: "2026",
-      tech: ["PostgreSQL", "Express", "React", "Node.js", "Socket.io"],
+      tech: ["Python", "FastAPI", "SQLite", "Ollama", "React", "TypeScript", "Recharts"],
       href: "#",
-      githubUrl: "https://github.com/Sourajit-M/chat-app",
-      image: "/images/chat-app.png",
+      githubUrl: "https://github.com/Sourajit-M/local-ai-inference-platform",
+      image: "/images/local-ai-inference.png",
       status: "Completed",
       highlights: [
-        "A full-featured messaging app with real-time WebSocket communication, user auth, and persistent chat history.", 
-        "Designed a clean PostgreSQL database schema to keep message fetching fast.", 
-        "Gemini API Key - AI summarization"
+        "Designed a local LLM benchmarking pipeline utilizing Ollama to profile TTFT, throughput (TPS), and latency across Llama 3.2, Qwen 2.5, and Phi 3 Mini.",
+        "Engineered comparative analytics dashboards to isolate temperature behaviors (0.0 vs 0.7) and analyze GPU cache-warming and WSL2 cold-start performance.",
+        "Built a FastAPI backend with SQLite relational storage and a glassmorphic React frontend featuring side-by-side Recharts visualizations."
       ]
     }
   ],
   skills: [
-    { name: "AI & ML", items: ["LangChain", "OpenAI API", "TensorFlow", "PyTorch", "FAISS"] },
-    { name: "Backend", items: ["Python", "Node.js", "FastAPI", "PostgreSQL", "Redis"] },
+    { name: "AI & ML", items: ["LangChain", "OpenAI API", "Ollama", "TensorFlow", "PyTorch", "FAISS"] },
+    { name: "Backend", items: ["Python", "Node.js", "FastAPI", "PostgreSQL", "SQLite", "Redis"] },
     { name: "Frontend", items: ["React", "Next.js", "TypeScript", "Tailwind CSS"] },
     { name: "DevOps", items: ["Docker", "Git", "Vercel", "Render"] }
   ],

@@ -22,8 +22,9 @@ import {
   SiSocketdotio,
   SiGit,
   SiNotion,
+  SiSqlite,
 } from "react-icons/si";
-import { FaJava,FaNodeJs, FaYoutube } from "react-icons/fa";
+import { FaJava, FaNodeJs, FaYoutube, FaBrain, FaChartBar } from "react-icons/fa";
 import { RiGeminiFill } from "react-icons/ri";
 import { VscVscode } from "react-icons/vsc";
 import { Database } from "lucide-react";
@@ -64,6 +65,9 @@ const iconMap: Record<string, React.ReactNode> = {
   "Socket.io": <SiSocketdotio size={22} />,
   "Youtube APIs": <FaYoutube size={24} className="text-[#e20909]"/>,
   "Gemini API Key": <RiGeminiFill size={24} className="text-[#196be6]" />,
+  "SQLite": <SiSqlite size={22} className="text-[#003B57]" />,
+  "Ollama": <FaBrain size={20} className="text-[#F7931E]" />,
+  "Recharts": <FaChartBar size={20} className="text-[#3182CE]" />,
 };
 
 export function TechIcon({ iconName }: TechIconProps) {
