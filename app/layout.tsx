@@ -3,6 +3,7 @@ import "./globals.css";
 import { Navigation } from "@/components/Navigation";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import { Footer } from "@/components/ui/Footer";
+import { ChatWidget } from "@/components/ChatWidget";
 
 export const metadata: Metadata = {
   title: "Sourajit Majumder | Full Stack & AI Developer",
@@ -26,6 +27,7 @@ export default function RootLayout({
         <ThemeProvider>
           <Navigation />
           {children}
+          <ChatWidget />
           <Footer />
         </ThemeProvider>
       </body>
