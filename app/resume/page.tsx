@@ -1,7 +1,6 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Download } from "lucide-react";
 import { portfolioData } from "@/data/portfolio";
 
 export default function Resume() {
@@ -18,7 +17,11 @@ export default function Resume() {
 
   const itemVariants: any = {
     hidden: { opacity: 0, y: 15 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" } },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.5, ease: "easeOut" },
+    },
   };
 
   return (
@@ -41,9 +44,9 @@ export default function Resume() {
           <div className="rounded-2xl overflow-hidden border border-zinc-800 shadow-2xl bg-zinc-900 w-full">
             <div className="relative w-full aspect-8.5/11">
               <iframe
-                src="https://drive.google.com/file/d/1r8cscztXiQYZf2y94rVsk2RR1X9MBEXM/view?usp=sharing"
+                src="/Resume_Imp.pdf"
                 className="absolute top-0 left-0 w-full h-full"
-                allow="autoplay"
+                title="Resume"
               />
             </div>
           </div>
@@ -67,19 +70,28 @@ export default function Resume() {
 
         {/* Skills Section */}
         <section className="flex flex-col gap-8">
-          <motion.div variants={itemVariants} className="flex items-center justify-between">
-            <h2 className="text-xs font-bold uppercase tracking-[0.2em] text-ctp-overlay1">Skills</h2>
+          <motion.div
+            variants={itemVariants}
+            className="flex items-center justify-between"
+          >
+            <h2 className="text-xs font-bold uppercase tracking-[0.2em] text-ctp-overlay1">
+              Skills
+            </h2>
             <div className="h-px flex-1 mx-6 bg-ctp-surface0/50" />
           </motion.div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
             {portfolioData.skills.map((category, index) => (
-              <motion.div key={index} variants={itemVariants} className="flex flex-col gap-3">
+              <motion.div
+                key={index}
+                variants={itemVariants}
+                className="flex flex-col gap-3"
+              >
                 <h3 className="font-medium text-ctp-text">{category.name}</h3>
                 <div className="flex flex-wrap gap-2">
                   {category.items.map((skill, i) => (
-                    <span 
-                      key={i} 
+                    <span
+                      key={i}
                       className="px-3 py-1 text-xs font-medium bg-ctp-crust border border-ctp-surface0 rounded-md text-ctp-subtext0"
                     >
                       {skill}
